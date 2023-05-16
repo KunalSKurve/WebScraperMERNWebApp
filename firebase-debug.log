@@ -1,0 +1,104 @@
+[debug] [2023-05-16T07:51:03.879Z] ----------------------------------------------------------------------
+[debug] [2023-05-16T07:51:03.880Z] Command:       /Users/kunalkurve/.nvm/versions/node/v18.16.0/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2023-05-16T07:51:03.880Z] CLI Version:   11.30.0
+[debug] [2023-05-16T07:51:03.880Z] Platform:      darwin
+[debug] [2023-05-16T07:51:03.880Z] Node Version:  v18.16.0
+[debug] [2023-05-16T07:51:03.883Z] Time:          Tue May 16 2023 13:21:03 GMT+0530 (India Standard Time)
+[debug] [2023-05-16T07:51:03.884Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-16T07:51:03.945Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-16T07:51:03.945Z] > authorizing via signed-in user (kunal.kurve19@vit.edu)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-05-16T07:51:04.110Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-16T07:51:04.110Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-05-16T07:51:04.115Z] [hub] writing locator at /var/folders/_1/vspwhn1d1dq8hcm6gn_5xm4m0000gn/T/hub-brightdata-yt-build-31857.json
+[debug] [2023-05-16T07:51:04.218Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-16T07:51:04.218Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-16T07:51:04.218Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-05-16T07:51:04.221Z] defaultcredentials: writing to file /Users/kunalkurve/.config/firebase/kunal_kurve19_vit.edu_application_default_credentials.json
+[debug] [2023-05-16T07:51:04.224Z] Setting GAC to /Users/kunalkurve/.config/firebase/kunal_kurve19_vit.edu_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/kunalkurve/.config/firebase/kunal_kurve19_vit.edu_application_default_credentials.json"}}
+[debug] [2023-05-16T07:51:04.225Z] > refreshing access token with scopes: []
+[debug] [2023-05-16T07:51:04.225Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-16T07:51:04.226Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-16T07:51:04.440Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-16T07:51:04.441Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-16T07:51:04.466Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/brightdata-yt-build-31857/adminSdkConfig [none]
+[debug] [2023-05-16T07:51:05.657Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/brightdata-yt-build-31857/adminSdkConfig 200
+[debug] [2023-05-16T07:51:05.658Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/brightdata-yt-build-31857/adminSdkConfig {"projectId":"brightdata-yt-build-31857","storageBucket":"brightdata-yt-build-31857.appspot.com"}
+[debug] [2023-05-16T07:51:05.688Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-05-16T07:51:05.688Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-05-16T07:51:05.688Z] Starting Emulator UI with command {"binary":"node","args":["/Users/kunalkurve/.cache/firebase/emulators/ui-v1.11.6/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/kunalkurve/.cache/firebase/emulators/ui-v1.11.6/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-05-16T07:51:05.767Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-05-16T07:51:05.768Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions\" for Cloud Functions..."}}
+[debug] [2023-05-16T07:51:05.956Z] Validating nodejs source
+[debug] [2023-05-16T07:51:06.323Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.7.0",
+    "firebase-functions": "^4.4.0",
+    "react-firebase-hooks": "^5.1.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.5"
+  },
+  "private": true
+}
+[debug] [2023-05-16T07:51:06.324Z] Building nodejs source
+[debug] [2023-05-16T07:51:06.324Z] Failed to find version of module node: reached end of search path /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-05-16T07:51:06.327Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-16T07:51:06.330Z] Found firebase-functions binary at '/Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-05-16T07:51:06.440Z] Serving at port 8899
+
+[debug] [2023-05-16T07:51:06.698Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error: Cannot find module './serviceAccountKey.json'
+Require stack:
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/firebaseAdmin.js
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/index.js
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js
+[debug] [2023-05-16T07:51:06.699Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:
+     ... fest from function source: Error: Cannot find module './serviceA ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error: Cannot find module './serviceAccountKey.json'\nRequire stack:\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/firebaseAdmin.js\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/index.js\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/runtime/loader.js\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js\n\u0000","position":55,"line":0,"column":55},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:\n     ... fest from function source: Error: Cannot find module './serviceA ... \n                                         ^"}
+[debug] [2023-05-16T07:51:06.701Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module './serviceAccountKey.json'
+Require stack:
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/firebaseAdmin.js
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/index.js
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module './serviceAccountKey.json'\nRequire stack:\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/firebaseAdmin.js\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/lib/index.js\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/runtime/loader.js\n- /Users/kunalkurve/YTWebScraper/brightdata-yt-build-backend/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
